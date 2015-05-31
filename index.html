@@ -6,8 +6,7 @@
 
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/materialdesignicons.min.css" media="all" />
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/prism.css">
+    <!--    <link type="text/css" rel="stylesheet" href="css/prism.css">-->
 
     <style>
       body, html
@@ -46,9 +45,9 @@
 
       .about h5
       {
-        text-align: center;
+        /*        text-align: center;*/
         text-transform: uppercase;
-        margin-bottom: 15px;
+        /*        margin-bottom: 15px;*/
       }
 
       .about h6
@@ -162,10 +161,19 @@
         display: block; 
       }
 
+      /*
       main h3 {
-        font-size: 2.5rem;
+      font-size: 2.5rem;
       }
-      
+      */
+
+      main hr
+      {
+        /*        width: 40px;*/
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
       @media only screen and (min-width : 993px) {
         .intro, main, footer {
           padding-left: 240px; 
@@ -173,13 +181,13 @@
         .navbar-icon {
           display: none; 
         } 
-/*
+        /*
         header h4 {
-          padding: 0 220px 0 220px;
-        }
-*/
+        padding: 0 220px 0 220px;
       }
-      
+        */
+      }
+
       .navbar-icon {
         float: left;
         position: relative;
@@ -201,6 +209,12 @@
         text-align: center;
         vertical-align: middle;        
       }
+
+      .card-content .card-title {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+
 
       #logo-container {
         height: 57px;
@@ -236,7 +250,7 @@
       .balance-text {
         text-wrap: balanced;  /* Apply (proposed) CSS style */
       }
-      
+
     </style>
 
 
@@ -247,6 +261,7 @@
     <!-- jQuery is required by Materialize to function -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/1.3.0/jquery.balancetext.min.js"></script>
+    <!--    <script type="text/javascript" src="js/prism.js"></script>-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
 
@@ -286,9 +301,7 @@
       <div class="intro amber lighten-3 z-depth-1">
         <div class="section no-pad-bot" id="index-banner">
           <h1 class="grey-text text-darken-2">Concordion</h1>
-          <div class="container">
-            <h4 class="grey-text text-darken-1 balance-text">Test Automation that generates Delightful Documentation</h4>
-          </div>
+          <h4 class="grey-text text-darken-1 balance-text">Test Automation + Delightful Documentation</h4>
         </div>
       </div>
     </header>
@@ -348,14 +361,10 @@
             </div>
           </div>
         </div>   
-        
-        <hr/>
 
-        <div class="row">
-          <h3 class="col s12 light center header grey-text text-darken-3">Concordion is great for Specification by Example (SbE) and Behaviour Driven Development (BDD)</h3>
-        </div>
+        <hr/>
       </div>
-      
+
       <!--
 <div class="section">
 <div class="container example">
@@ -367,6 +376,11 @@
 -->
 
       <div class="container about">
+
+        <div class="row">
+          <h4 class="col s12 light center grey-text text-darken-3">Concordion is great for Specification by Example (SbE) and Behaviour Driven Development (BDD)</h4>
+        </div>
+
         <div class="row center-align">
           <div class="col s12 m4 l4">
 
@@ -402,11 +416,82 @@
             </div>
           </div>
         </div>
+
+        <hr/>
+
+      </div>
+
+
+      <div class="container about">
+
+        <div class="row">
+          <h4 class="col s12 light center grey-text text-darken-3">Test your application code directly, or integrate with other driver code to test Web, Mobile, Web Service, Database, etc </h4>
+        </div>
+
+        <hr/>
+
+<!--
+        <div class="row">
+          <h4 class="col s12 light center grey-text text-darken-3">Attractive output</h4>
+        </div>
+-->
         
+        <div class="row center-align">
+
+          <div class="col s12 m4 l4">
+            <div class="card grey darken-2">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/intro-table.png"/>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator amber-text text-accent-3">Tables<i class="mdi-navigation-more-vert right"></i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Tables <i class="mdi-navigation-close right"></i></span>
+                <p>When you want to show several examples of a behaviour, <a href="#">tables</a> provide a concise alternative to repeating the same sentence structure over and over again.</p>
+                <p>You can also <a href="#">verify</a> a list of results against a table.</p>
+              </div>              
+            </div>
+          </div>
+
+          <div class="col s12 m4 l4">
+            <div class="card grey darken-2">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/intro-index.png"/>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator amber-text text-accent-3">Indexes<i class="mdi-navigation-more-vert right"></i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Indexes <i class="mdi-navigation-close right"></i></span>
+                <p>You can <a href="#">link</a> to other specifications to run them, with the output colour-coded to show success, failure or ignored status.</p>
+                <p>You can even nest the pages to form a hierarchical index, with aggregated results.</p>
+              </div>              
+            </div>
+          </div>
+          
+          <div class="col s12 m4 l4">
+            <div class="card grey darken-2">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/intro-breadcrumbs.png"/>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator amber-text text-accent-3">Breadcrumbs<i class="mdi-navigation-more-vert right"></i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Breadcrumbs <i class="mdi-navigation-close right"></i></span>
+                <p>To make it easier to navigate around the results, and to remove the headache of having to maintain upward links manually, <a href="#">breadcrumbs</a> are automatically added to output.</p>
+              </div>              
+            </div>
+          </div>
+          
+        </div>
+
         <hr/>
         
+        
       </div>
-      
+
 
 
       <!--
