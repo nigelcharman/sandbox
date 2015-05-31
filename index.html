@@ -17,14 +17,15 @@
       .intro
       {
         text-align: center;
-        padding-top: 2%;
-        padding-bottom: 5%;
+        padding-top: 1%;
+        padding-bottom: 3%;
         margin-bottom: 50px;
       }
 
       .intro h1
       {
-        font-weight: 900;
+        font-weight: 500;
+        font-variant: small-caps;
       }
 
       .intro h5
@@ -159,25 +160,31 @@
       main {
         display: block; 
       }
+
       @media only screen and (min-width : 993px) {
-        main, footer {
+        .intro, main, footer {
           padding-left: 240px; 
-        } }
+        } 
+        .navbar-icon {
+          display: none; 
+        } 
+      }
+
+      /*
       .header {
-        color: #ee6e73;
-        font-weight: 300; 
+      color: #ee6e73;
+      font-weight: 300; 
       }
 
-      @media only screen and (min-width : 993px) {
-        .xx {
-          display: none; } 
-      }
-
-      .xx {
+      */
+      .navbar-icon {
         float: left;
         position: relative;
         z-index: 1;
-        height: 56px; }
+        font-size: 36px;
+        /*        height: 56px; */
+      }
+
       nav .button-collapse i {
         font-size: 2.7rem;
         height: 56px;
@@ -185,9 +192,12 @@
 
       .grid-example {
         background-color: #88EDED !important;
-
       }
 
+      .card-content {
+        text-align: center;
+        vertical-align: middle;        
+      }
 
       #logo-container {
         height: 57px;
@@ -245,7 +255,8 @@
 
     <header>
 
-      <div class="container xx"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav"><i class="mdi-navigation-menu medium  grey-text"></i></a></div>        
+      <div class="container navbar-icon"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav"><i class="mdi-navigation-menu medium  grey-text"></i></a></div>        
+
       <div class="nav-wrapper">
         <ul class="side-nav fixed hide-on-med-and-down">
           <li class="logo"><a id="logo-container" href="http://concordion.org/" class="brand-logo"><img src="img/logo.jpg"</img></a></li>
@@ -263,62 +274,85 @@
         </ul>
       </div>
 
-    </header>
-
-    <main>
-
-      <!--  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>  -->
       <div class="intro amber lighten-3 z-depth-1">
         <div class="section no-pad-bot" id="index-banner">
           <h1 class="grey-text text-darken-2">Concordion</h1>
-          <h4 class="grey-text text-darken-1">A test runner that creates attractive living documentation</h4>
+          <h4 class="grey-text text-darken-1">Test Automation that generates Delightful Documentation</h4>
         </div>
       </div>
+    </header>
 
+    <main>
+      <div class="container overview">
+        <div class="row center-align valign-wrapper hide-on-small-only">
+          <div class="col s12 m5 l5">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/bob-spec.png" width="100%"/>
+              </div>
+            </div>
+
+            <i class="mdi mdi-plus medium lighten-2"></i>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="img/bob-code.png" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m2 l2 center-align">
+            <i class="mdi mdi-equal medium lighten-2"></i>
+          </div>
+
+          <div class="col s12 m5 l5">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/bob-output.png" width="100%" />
+              </div>
+            </div>
+          </div>
+        </div>   
+
+        <div class="center-align hide-on-med-and-up">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/bob-spec.png" width="100%"/>
+            </div>
+          </div>
+
+          <i class="mdi mdi-plus medium lighten-2"></i>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="img/bob-code.png" />
+            </div>
+          </div>
+
+          <i class="mdi mdi-equal medium lighten-2"></i>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="img/bob-output.png" width="100%" />
+            </div>
+          </div>
+        </div>   
+        
+        <hr/>
+
+        <div class="row">
+          <h3 class="col s12 light center header">Concordion is great for Specification by Example (SbE) and Behaviour Driven Development (BDD)</h3>
+        </div>
+      </div>
+      
       <!--
-<div class="container overview">
-<div class="row">
-<div class="col s12 m1 l1">
-</div>
-<div class="col s12 m12 l3">
-<div class="card">
-<div class="card-image">
-<img src="img/bob-spec.png"/>
-</div>
-<div class="card-content">
-Create your system documentation and instrument it.
+<div class="section">
+<div class="container example">
+<div class="row center">
+<img src="img/hello-world.png"/>
 </div>
 </div>
 </div>
-
-<div class="col s12 m1 l1">
-<i class="mdi mdi-plus medium lighten-1" ></i>
-</div>
-
-<div class="col s12 m12 l4">
-<img src="img/bob-code.png" width="100%" />
-</div>
-
-<div class="col s12 m1 l1  light-grey-text">
-<i class="mdi mdi-equal medium lighten-2" ></i>
-</div>
-
-<div class="col s12 m12 l2">
-<img src="img/bob-output.png" width="100%" />
-</div>
-
-</div>
-</div>   
--->
-
-<!--
-      <div class="section">
-      <div class="container example">
-        <div class="row center">
-          <img src="img/hello-world.png"/>
-        </div>
-      </div>
-      </div>
 -->
 
       <div class="container about">
@@ -348,7 +382,7 @@ Create your system documentation and instrument it.
 
             <div class="card-panel grey darken-1">
               <div class="card-content white-text">
-<!--                <div><i class="mdi mdi-transfer medium lighten-2" ></i></div>-->
+                <!--                <div><i class="mdi mdi-transfer medium lighten-2" ></i></div>-->
                 <b>EXTENSIBLE</b>
                 <p>The powerful extension mechanism allows you to add functionality and customise existing features. Many pre-packaged extensions are available.</p>
               </div>
@@ -356,64 +390,64 @@ Create your system documentation and instrument it.
           </div>
         </div>
       </div>
-      
-      
-<!--
-      <div class="container about">
-        <div class="row">
-          <div class="col s12 m4 l4">
-
-            <div class="card grey darken-1">
-              <div class="card-content white-text">
-                <img src="http://labs.qnimate.com/portfolio-materialize/images/profile.png" width="64" height="64">
-                
-                
-                <div><i class="mdi mdi-pencil medium lighten-2" ></i></div>
-                <p>Create a specification and instrument it</p>
-              </div>
-              <div class="card-action">
-                <a href="#">Link</a>
-                <a href='#'>Link</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m4 l4">
-
-            <div class="card grey darken-1">
-              <div class="card-content white-text">
-                <img src="http://labs.qnimate.com/portfolio-materialize/images/profile.png" width="64" height="64">
-                <div>2</div>
-                <p>Create test code</p>
-              </div>
-              <div class="card-action">
-                <a href="#">Link</a>
-                <a href='#'>Link</a>
-              </div>
-            </div>
-          </div>
 
 
-          <div class="col s12 m4 l4">
+      <!--
+<div class="container about">
+<div class="row">
+<div class="col s12 m4 l4">
 
-            <div class="card grey darken-1">
-              <div class="card-content white-text">
-                <img src="http://labs.qnimate.com/portfolio-materialize/images/profile.png" width="64" height="64">
-                <div>3</div>
-                <p>Run the test code and the output specification will be marked up with the test results</p>
-              </div>
-              <div class="card-action">
-                <a href="#">Link</a>
-                <a href='#'>Link</a>
-              </div>
+<div class="card grey darken-1">
+<div class="card-content white-text">
+<img src="http://labs.qnimate.com/portfolio-materialize/images/profile.png" width="64" height="64">
 
-            </div>
-          </div>
-        </div>
-      </div>
+
+<div><i class="mdi mdi-pencil medium lighten-2" ></i></div>
+<p>Create a specification and instrument it</p>
+</div>
+<div class="card-action">
+<a href="#">Link</a>
+<a href='#'>Link</a>
+</div>
+</div>
+</div>
+
+<div class="col s12 m4 l4">
+
+<div class="card grey darken-1">
+<div class="card-content white-text">
+<img src="http://labs.qnimate.com/portfolio-materialize/images/profile.png" width="64" height="64">
+<div>2</div>
+<p>Create test code</p>
+</div>
+<div class="card-action">
+<a href="#">Link</a>
+<a href='#'>Link</a>
+</div>
+</div>
+</div>
+
+
+<div class="col s12 m4 l4">
+
+<div class="card grey darken-1">
+<div class="card-content white-text">
+<img src="http://labs.qnimate.com/portfolio-materialize/images/profile.png" width="64" height="64">
+<div>3</div>
+<p>Run the test code and the output specification will be marked up with the test results</p>
+</div>
+<div class="card-action">
+<a href="#">Link</a>
+<a href='#'>Link</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
 -->
 
-          <!--
+      <!--
 </div>
 <div class="col s12 m4 l4">
 <h6>Profile</h6>
