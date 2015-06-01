@@ -6,8 +6,11 @@
 
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/materialdesignicons.min.css" media="all" />
-    <!--    <link type="text/css" rel="stylesheet" href="css/prism.css">-->
-
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+    <![endif]-->
+    
     <style>
       body, html
       {
@@ -17,9 +20,9 @@
       .intro
       {
         text-align: center;
-        padding-top: 1%;
-        padding-bottom: 3%;
-        margin-bottom: 50px;
+/*        padding-top: 1%;*/
+        padding-bottom: 2%;
+        margin-bottom: 30px;
       }
 
       .intro h1
@@ -196,10 +199,12 @@
         /*        height: 56px; */
       }
 
+/*
       nav .button-collapse i {
         font-size: 2.7rem;
         height: 56px;
         line-height: 56px; }      
+*/
 
       .grid-example {
         background-color: #88EDED !important;
@@ -211,7 +216,7 @@
       }
 
       .card-content .card-title {
-        text-transform: uppercase;
+/*        text-transform: uppercase;*/
         font-size: 1.2rem;
       }
 
@@ -261,7 +266,6 @@
     <!-- jQuery is required by Materialize to function -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/1.3.0/jquery.balancetext.min.js"></script>
-    <!--    <script type="text/javascript" src="js/prism.js"></script>-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
 
@@ -278,7 +282,6 @@
     </script> 
 
     <header>
-
       <div class="container navbar-icon"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav"><i class="mdi-navigation-menu medium  grey-text"></i></a></div>        
 
       <div class="nav-wrapper">
@@ -297,15 +300,25 @@
           <li><a href="Questions.html">FAQ</a></li>
         </ul>
       </div>
-
-      <div class="intro amber lighten-3 z-depth-1">
-        <div class="section no-pad-bot" id="index-banner">
-          <h1 class="grey-text text-darken-2">Concordion</h1>
-          <h4 class="grey-text text-darken-1 balance-text">Test Automation + Delightful Documentation</h4>
+      
+      <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon grey darken-2">
+          <a href="https://github.com/concordion/concordion">Fork me on GitHub</a>
         </div>
       </div>
+      
+      <div class="intro amber lighten-3 z-depth-1">
+        <div class="section no-pad-bot" id="index-banner">
+          <h1 class="blue-grey-text text-darken-3">Concordion</h1>
+          <h4 class="blue-grey-text text-darken-2 balance-text">Test Automation + Delightful Documentation</h4>
+          <br/>
+          <a class="waves-effect waves-light btn green darken-1 white-text text-lighten-4"><i class="mdi mdi-run left"></i>Get Started</a>
+        </div>
+      </div>
+
     </header>
 
+    
     <main>
       <div class="container overview">
         <div class="row center-align valign-wrapper hide-on-small-only">
@@ -381,12 +394,12 @@
           <h4 class="col s12 light center grey-text text-darken-3">Concordion is great for Specification by Example (SbE) and Behaviour Driven Development (BDD)</h4>
         </div>
 
-        <div class="row center-align">
-          <div class="col s12 m4 l4">
+        <div class="row center-align grey-text text-darken-2">
 
-            <div class="card-panel grey darken-1">
-              <div class="card-content amber-text text-accent-1">
-                <div><i class="mdi mdi-omega medium amber-text text-lighten-2"></i></div>
+          <div class="col s12 m4 l4">
+            <div class="card-panel grey lighten-1">
+              <div class="card-content">
+                <div><i class="mdi mdi-omega medium white-text"></i></div>
                 <p><b>FLEXIBLE</b></p>
                 <p>Unlike other tools, you can write your specifications in normal language and use features such as hyperlinks and images in your documentation.</p>
               </div>
@@ -394,10 +407,9 @@
           </div>
 
           <div class="col s12 m4 l4">
-
-            <div class="card-panel grey darken-1">
-              <div class="card-content amber-text text-accent-1">
-                <div><i class="mdi mdi-numeric medium amber-text text-lighten-2"></i></div>
+            <div class="card-panel grey lighten-1">
+              <div class="card-content">
+                <div><i class="mdi mdi-numeric medium white-text"></i></div>
                 <p><b>SIMPLE</b></p>
                 <p>Built with a purposely small command set, you can learn Concordion quickly. It's also simple to integrate with your existing development tools.</p>
               </div>
@@ -406,10 +418,9 @@
 
 
           <div class="col s12 m4 l4">
-
-            <div class="card-panel grey darken-1">
-              <div class="card-content amber-text text-accent-1">
-                <div><i class="mdi mdi-gift medium amber-text text-lighten-2"></i></div>
+            <div class="card-panel grey lighten-1">
+              <div class="card-content">
+                <div><i class="mdi mdi-gift medium white-text"></i></div>
                 <p><b>EXTENSIBLE</b></p>
                 <p>The powerful extension mechanism allows you to add functionality and customise existing features. Many pre-packaged extensions are available.</p>
               </div>
@@ -431,12 +442,12 @@
         <div class="row center-align">
 
           <div class="col s12 m4 l4">
-            <div class="card grey darken-2">
+            <div class="card grey lighten-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/intro-table.png"/>
               </div>
               <div class="card-content">
-                <span class="card-title activator amber-text text-accent-3">Tables<i class="mdi-navigation-more-vert right"></i></span>
+                <span class="card-title activator grey-text text-darken-3">Tables<i class="mdi-navigation-more-vert right"></i></span>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Tables <i class="mdi-navigation-close right"></i></span>
@@ -447,12 +458,12 @@
           </div>
 
           <div class="col s12 m4 l4">
-            <div class="card grey darken-2">
+            <div class="card grey lighten-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/intro-index.png"/>
               </div>
               <div class="card-content">
-                <span class="card-title activator amber-text text-accent-3">Indexes<i class="mdi-navigation-more-vert right"></i></span>
+                <span class="card-title activator grey-text text-darken-3">Indexes<i class="mdi-navigation-more-vert right"></i></span>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Indexes <i class="mdi-navigation-close right"></i></span>
@@ -463,12 +474,12 @@
           </div>
           
           <div class="col s12 m4 l4">
-            <div class="card grey darken-2">
+            <div class="card grey lighten-3">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/intro-breadcrumbs.png"/>
               </div>
               <div class="card-content">
-                <span class="card-title activator amber-text text-accent-3">Breadcrumbs<i class="mdi-navigation-more-vert right"></i></span>
+                <span class="card-title activator grey-text text-darken-3">Breadcrumbs<i class="mdi-navigation-more-vert right"></i></span>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Breadcrumbs <i class="mdi-navigation-close right"></i></span>
@@ -652,5 +663,6 @@
 </div>
 </footer>
 -->
+    
   </body>
 </html>
